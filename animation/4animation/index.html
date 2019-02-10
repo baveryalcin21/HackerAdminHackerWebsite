@@ -1,0 +1,561 @@
+<!DOCTYPE html>
+<html lang="tr" >
+<head>
+  <meta charset="UTF-8">
+  <title>404 Hatası</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+   <style>
+   button,hr,input{overflow:visible}audio,canvas,progress,video{display:inline-block}progress,sub,sup{vertical-align:baseline}html{font-family:sans-serif;line-height:1.15;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}body{margin:0} menu,article,aside,details,footer,header,nav,section{display:block}h1{font-size:2em;margin:.67em 0}figcaption,figure,main{display:block}figure{margin:1em 40px}hr{box-sizing:content-box;height:0}code,kbd,pre,samp{font-family:monospace,monospace;font-size:1em}a{background-color:transparent;-webkit-text-decoration-skip:objects}a:active,a:hover{outline-width:0}abbr[title]{border-bottom:none;text-decoration:underline;text-decoration:underline dotted}b,strong{font-weight:bolder}dfn{font-style:italic}mark{background-color:#ff0;color:#000}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative}sub{bottom:-.25em}sup{top:-.5em}audio:not([controls]){display:none;height:0}img{border-style:none}svg:not(:root){overflow:hidden}button,input,optgroup,select,textarea{font-family:sans-serif;font-size:100%;line-height:1.15;margin:0}button,input{}button,select{text-transform:none}[type=submit], [type=reset],button,html [type=button]{-webkit-appearance:button}[type=button]::-moz-focus-inner,[type=reset]::-moz-focus-inner,[type=submit]::-moz-focus-inner,button::-moz-focus-inner{border-style:none;padding:0}[type=button]:-moz-focusring,[type=reset]:-moz-focusring,[type=submit]:-moz-focusring,button:-moz-focusring{outline:ButtonText dotted 1px}fieldset{border:1px solid silver;margin:0 2px;padding:.35em .625em .75em}legend{box-sizing:border-box;color:inherit;display:table;max-width:100%;padding:0;white-space:normal}progress{}textarea{overflow:auto}[type=checkbox],[type=radio]{box-sizing:border-box;padding:0}[type=number]::-webkit-inner-spin-button,[type=number]::-webkit-outer-spin-button{height:auto}[type=search]{-webkit-appearance:textfield;outline-offset:-2px}[type=search]::-webkit-search-cancel-button,[type=search]::-webkit-search-decoration{-webkit-appearance:none}::-webkit-file-upload-button{-webkit-appearance:button;font:inherit}summary{display:list-item}[hidden],template{display:none}/*# sourceMappingURL=normalize.min.css.map */
+   </style>
+  <style>
+  /* cyrillic */
+@font-face {
+  font-family: 'Exo 2';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Exo 2'), local('Exo2-Regular'), url(https://fonts.gstatic.com/s/exo2/v4/7cHmv4okm5zmbtYsK-4E4Q.woff2) format('woff2');
+  unicode-range: U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Exo 2';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Exo 2'), local('Exo2-Regular'), url(https://fonts.gstatic.com/s/exo2/v4/7cHmv4okm5zmbtYmK-4E4Q.woff2) format('woff2');
+  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Exo 2';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Exo 2'), local('Exo2-Regular'), url(https://fonts.gstatic.com/s/exo2/v4/7cHmv4okm5zmbtYoK-4.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+  </style>
+  <style> 
+body {
+  background-color: #000;
+  display: flex;
+  height: 100vh;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  font-family: 'Montserrat', sans-serif;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+.glitch {
+  position: relative;
+  margin-top: auto;
+  font-size: 6rem;
+  font-weight: 600;
+  color: #fff;
+  text-transform: uppercase;
+  -webkit-transform: scale3d(1, 1, 1);
+          transform: scale3d(1, 1, 1);
+}
+.glitch::before, .glitch::after {
+  content: attr(data-text);
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  color: #fff;
+  background: #000;
+}
+.glitch::before {
+  left: 3px;
+  text-shadow: 3px 0 #67FF2C;
+  animation: glitch-effect 3s infinite linear alternate-reverse;
+}
+.glitch::after {
+  left: -3px;
+  text-shadow: -3px 0 #FF2C5E;
+  animation: glitch-effect 2s infinite linear alternate-reverse;
+}
+
+@-webkit-keyframes glitch-effect {
+  0% {
+    -webkit-clip-path: inset(78% 0 17% 0);
+            clip-path: inset(78% 0 17% 0);
+  }
+  2% {
+    -webkit-clip-path: inset(66% 0 54% 0);
+            clip-path: inset(66% 0 54% 0);
+  }
+  4% {
+    -webkit-clip-path: inset(11% 0 19% 0);
+            clip-path: inset(11% 0 19% 0);
+  }
+  6% {
+    -webkit-clip-path: inset(81% 0 4% 0);
+            clip-path: inset(81% 0 4% 0);
+  }
+  8% {
+    -webkit-clip-path: inset(73% 0 6% 0);
+            clip-path: inset(73% 0 6% 0);
+  }
+  10% {
+    -webkit-clip-path: inset(99% 0 39% 0);
+            clip-path: inset(99% 0 39% 0);
+  }
+  12% {
+    -webkit-clip-path: inset(58% 0 28% 0);
+            clip-path: inset(58% 0 28% 0);
+  }
+  14% {
+    -webkit-clip-path: inset(74% 0 74% 0);
+            clip-path: inset(74% 0 74% 0);
+  }
+  16% {
+    -webkit-clip-path: inset(75% 0 66% 0);
+            clip-path: inset(75% 0 66% 0);
+  }
+  18% {
+    -webkit-clip-path: inset(94% 0 36% 0);
+            clip-path: inset(94% 0 36% 0);
+  }
+  20% {
+    -webkit-clip-path: inset(2% 0 89% 0);
+            clip-path: inset(2% 0 89% 0);
+  }
+  22% {
+    -webkit-clip-path: inset(71% 0 25% 0);
+            clip-path: inset(71% 0 25% 0);
+  }
+  24% {
+    -webkit-clip-path: inset(90% 0 100% 0);
+            clip-path: inset(90% 0 100% 0);
+  }
+  26% {
+    -webkit-clip-path: inset(30% 0 46% 0);
+            clip-path: inset(30% 0 46% 0);
+  }
+  28% {
+    -webkit-clip-path: inset(59% 0 80% 0);
+            clip-path: inset(59% 0 80% 0);
+  }
+  30% {
+    -webkit-clip-path: inset(64% 0 9% 0);
+            clip-path: inset(64% 0 9% 0);
+  }
+  32% {
+    -webkit-clip-path: inset(65% 0 44% 0);
+            clip-path: inset(65% 0 44% 0);
+  }
+  34% {
+    -webkit-clip-path: inset(77% 0 100% 0);
+            clip-path: inset(77% 0 100% 0);
+  }
+  36% {
+    -webkit-clip-path: inset(61% 0 58% 0);
+            clip-path: inset(61% 0 58% 0);
+  }
+  38% {
+    -webkit-clip-path: inset(30% 0 79% 0);
+            clip-path: inset(30% 0 79% 0);
+  }
+  40% {
+    -webkit-clip-path: inset(46% 0 22% 0);
+            clip-path: inset(46% 0 22% 0);
+  }
+  42% {
+    -webkit-clip-path: inset(47% 0 1% 0);
+            clip-path: inset(47% 0 1% 0);
+  }
+  44% {
+    -webkit-clip-path: inset(20% 0 35% 0);
+            clip-path: inset(20% 0 35% 0);
+  }
+  46% {
+    -webkit-clip-path: inset(19% 0 97% 0);
+            clip-path: inset(19% 0 97% 0);
+  }
+  48% {
+    -webkit-clip-path: inset(61% 0 30% 0);
+            clip-path: inset(61% 0 30% 0);
+  }
+  50% {
+    -webkit-clip-path: inset(14% 0 16% 0);
+            clip-path: inset(14% 0 16% 0);
+  }
+  52% {
+    -webkit-clip-path: inset(51% 0 46% 0);
+            clip-path: inset(51% 0 46% 0);
+  }
+  54% {
+    -webkit-clip-path: inset(81% 0 13% 0);
+            clip-path: inset(81% 0 13% 0);
+  }
+  56% {
+    -webkit-clip-path: inset(83% 0 70% 0);
+            clip-path: inset(83% 0 70% 0);
+  }
+  58% {
+    -webkit-clip-path: inset(93% 0 68% 0);
+            clip-path: inset(93% 0 68% 0);
+  }
+  60% {
+    -webkit-clip-path: inset(3% 0 30% 0);
+            clip-path: inset(3% 0 30% 0);
+  }
+  62% {
+    -webkit-clip-path: inset(73% 0 38% 0);
+            clip-path: inset(73% 0 38% 0);
+  }
+  64% {
+    -webkit-clip-path: inset(7% 0 20% 0);
+            clip-path: inset(7% 0 20% 0);
+  }
+  66% {
+    -webkit-clip-path: inset(58% 0 30% 0);
+            clip-path: inset(58% 0 30% 0);
+  }
+  68% {
+    -webkit-clip-path: inset(12% 0 10% 0);
+            clip-path: inset(12% 0 10% 0);
+  }
+  70% {
+    -webkit-clip-path: inset(63% 0 85% 0);
+            clip-path: inset(63% 0 85% 0);
+  }
+  72% {
+    -webkit-clip-path: inset(20% 0 77% 0);
+            clip-path: inset(20% 0 77% 0);
+  }
+  74% {
+    -webkit-clip-path: inset(23% 0 88% 0);
+            clip-path: inset(23% 0 88% 0);
+  }
+  76% {
+    -webkit-clip-path: inset(43% 0 41% 0);
+            clip-path: inset(43% 0 41% 0);
+  }
+  78% {
+    -webkit-clip-path: inset(78% 0 90% 0);
+            clip-path: inset(78% 0 90% 0);
+  }
+  80% {
+    -webkit-clip-path: inset(52% 0 11% 0);
+            clip-path: inset(52% 0 11% 0);
+  }
+  82% {
+    -webkit-clip-path: inset(1% 0 70% 0);
+            clip-path: inset(1% 0 70% 0);
+  }
+  84% {
+    -webkit-clip-path: inset(6% 0 97% 0);
+            clip-path: inset(6% 0 97% 0);
+  }
+  86% {
+    -webkit-clip-path: inset(47% 0 90% 0);
+            clip-path: inset(47% 0 90% 0);
+  }
+  88% {
+    -webkit-clip-path: inset(11% 0 89% 0);
+            clip-path: inset(11% 0 89% 0);
+  }
+  90% {
+    -webkit-clip-path: inset(1% 0 52% 0);
+            clip-path: inset(1% 0 52% 0);
+  }
+  92% {
+    -webkit-clip-path: inset(49% 0 94% 0);
+            clip-path: inset(49% 0 94% 0);
+  }
+  94% {
+    -webkit-clip-path: inset(38% 0 79% 0);
+            clip-path: inset(38% 0 79% 0);
+  }
+  96% {
+    -webkit-clip-path: inset(86% 0 40% 0);
+            clip-path: inset(86% 0 40% 0);
+  }
+  98% {
+    -webkit-clip-path: inset(7% 0 33% 0);
+            clip-path: inset(7% 0 33% 0);
+  }
+  100% {
+    -webkit-clip-path: inset(96% 0 39% 0);
+            clip-path: inset(96% 0 39% 0);
+  }
+}
+
+@keyframes glitch-effect {
+  0% {
+    -webkit-clip-path: inset(78% 0 17% 0);
+            clip-path: inset(78% 0 17% 0);
+  }
+  2% {
+    -webkit-clip-path: inset(66% 0 54% 0);
+            clip-path: inset(66% 0 54% 0);
+  }
+  4% {
+    -webkit-clip-path: inset(11% 0 19% 0);
+            clip-path: inset(11% 0 19% 0);
+  }
+  6% {
+    -webkit-clip-path: inset(81% 0 4% 0);
+            clip-path: inset(81% 0 4% 0);
+  }
+  8% {
+    -webkit-clip-path: inset(73% 0 6% 0);
+            clip-path: inset(73% 0 6% 0);
+  }
+  10% {
+    -webkit-clip-path: inset(99% 0 39% 0);
+            clip-path: inset(99% 0 39% 0);
+  }
+  12% {
+    -webkit-clip-path: inset(58% 0 28% 0);
+            clip-path: inset(58% 0 28% 0);
+  }
+  14% {
+    -webkit-clip-path: inset(74% 0 74% 0);
+            clip-path: inset(74% 0 74% 0);
+  }
+  16% {
+    -webkit-clip-path: inset(75% 0 66% 0);
+            clip-path: inset(75% 0 66% 0);
+  }
+  18% {
+    -webkit-clip-path: inset(94% 0 36% 0);
+            clip-path: inset(94% 0 36% 0);
+  }
+  20% {
+    -webkit-clip-path: inset(2% 0 89% 0);
+            clip-path: inset(2% 0 89% 0);
+  }
+  22% {
+    -webkit-clip-path: inset(71% 0 25% 0);
+            clip-path: inset(71% 0 25% 0);
+  }
+  24% {
+    -webkit-clip-path: inset(90% 0 100% 0);
+            clip-path: inset(90% 0 100% 0);
+  }
+  26% {
+    -webkit-clip-path: inset(30% 0 46% 0);
+            clip-path: inset(30% 0 46% 0);
+  }
+  28% {
+    -webkit-clip-path: inset(59% 0 80% 0);
+            clip-path: inset(59% 0 80% 0);
+  }
+  30% {
+    -webkit-clip-path: inset(64% 0 9% 0);
+            clip-path: inset(64% 0 9% 0);
+  }
+  32% {
+    -webkit-clip-path: inset(65% 0 44% 0);
+            clip-path: inset(65% 0 44% 0);
+  }
+  34% {
+    -webkit-clip-path: inset(77% 0 100% 0);
+            clip-path: inset(77% 0 100% 0);
+  }
+  36% {
+    -webkit-clip-path: inset(61% 0 58% 0);
+            clip-path: inset(61% 0 58% 0);
+  }
+  38% {
+    -webkit-clip-path: inset(30% 0 79% 0);
+            clip-path: inset(30% 0 79% 0);
+  }
+  40% {
+    -webkit-clip-path: inset(46% 0 22% 0);
+            clip-path: inset(46% 0 22% 0);
+  }
+  42% {
+    -webkit-clip-path: inset(47% 0 1% 0);
+            clip-path: inset(47% 0 1% 0);
+  }
+  44% {
+    -webkit-clip-path: inset(20% 0 35% 0);
+            clip-path: inset(20% 0 35% 0);
+  }
+  46% {
+    -webkit-clip-path: inset(19% 0 97% 0);
+            clip-path: inset(19% 0 97% 0);
+  }
+  48% {
+    -webkit-clip-path: inset(61% 0 30% 0);
+            clip-path: inset(61% 0 30% 0);
+  }
+  50% {
+    -webkit-clip-path: inset(14% 0 16% 0);
+            clip-path: inset(14% 0 16% 0);
+  }
+  52% {
+    -webkit-clip-path: inset(51% 0 46% 0);
+            clip-path: inset(51% 0 46% 0);
+  }
+  54% {
+    -webkit-clip-path: inset(81% 0 13% 0);
+            clip-path: inset(81% 0 13% 0);
+  }
+  56% {
+    -webkit-clip-path: inset(83% 0 70% 0);
+            clip-path: inset(83% 0 70% 0);
+  }
+  58% {
+    -webkit-clip-path: inset(93% 0 68% 0);
+            clip-path: inset(93% 0 68% 0);
+  }
+  60% {
+    -webkit-clip-path: inset(3% 0 30% 0);
+            clip-path: inset(3% 0 30% 0);
+  }
+  62% {
+    -webkit-clip-path: inset(73% 0 38% 0);
+            clip-path: inset(73% 0 38% 0);
+  }
+  64% {
+    -webkit-clip-path: inset(7% 0 20% 0);
+            clip-path: inset(7% 0 20% 0);
+  }
+  66% {
+    -webkit-clip-path: inset(58% 0 30% 0);
+            clip-path: inset(58% 0 30% 0);
+  }
+  68% {
+    -webkit-clip-path: inset(12% 0 10% 0);
+            clip-path: inset(12% 0 10% 0);
+  }
+  70% {
+    -webkit-clip-path: inset(63% 0 85% 0);
+            clip-path: inset(63% 0 85% 0);
+  }
+  72% {
+    -webkit-clip-path: inset(20% 0 77% 0);
+            clip-path: inset(20% 0 77% 0);
+  }
+  74% {
+    -webkit-clip-path: inset(23% 0 88% 0);
+            clip-path: inset(23% 0 88% 0);
+  }
+  76% {
+    -webkit-clip-path: inset(43% 0 41% 0);
+            clip-path: inset(43% 0 41% 0);
+  }
+  78% {
+    -webkit-clip-path: inset(78% 0 90% 0);
+            clip-path: inset(78% 0 90% 0);
+  }
+  80% {
+    -webkit-clip-path: inset(52% 0 11% 0);
+            clip-path: inset(52% 0 11% 0);
+  }
+  82% {
+    -webkit-clip-path: inset(1% 0 70% 0);
+            clip-path: inset(1% 0 70% 0);
+  }
+  84% {
+    -webkit-clip-path: inset(6% 0 97% 0);
+            clip-path: inset(6% 0 97% 0);
+  }
+  86% {
+    -webkit-clip-path: inset(47% 0 90% 0);
+            clip-path: inset(47% 0 90% 0);
+  }
+  88% {
+    -webkit-clip-path: inset(11% 0 89% 0);
+            clip-path: inset(11% 0 89% 0);
+  }
+  90% {
+    -webkit-clip-path: inset(1% 0 52% 0);
+            clip-path: inset(1% 0 52% 0);
+  }
+  92% {
+    -webkit-clip-path: inset(49% 0 94% 0);
+            clip-path: inset(49% 0 94% 0);
+  }
+  94% {
+    -webkit-clip-path: inset(38% 0 79% 0);
+            clip-path: inset(38% 0 79% 0);
+  }
+  96% {
+    -webkit-clip-path: inset(86% 0 40% 0);
+            clip-path: inset(86% 0 40% 0);
+  }
+  98% {
+    -webkit-clip-path: inset(7% 0 33% 0);
+            clip-path: inset(7% 0 33% 0);
+  }
+  100% {
+    -webkit-clip-path: inset(96% 0 39% 0);
+            clip-path: inset(96% 0 39% 0);
+  }
+}
+h2 {
+  color: rgba(255, 255, 255, 0.5);
+  font-weight: 300;
+}
+
+small, a {
+  margin: auto auto 1rem auto;
+  color: rgba(255, 255, 255, 0.4);
+}   
+</style>
+</head>
+<body>
+<h1 class="glitch" data-text="404">404</h1>
+<h2>Uh-oh! This is not good.</h2>
+<small>Hacker Admin Hacker</small>
+    <script>
+	var phrases = ['Böyle Bir Sayfa Bulunamadı', 'Bir Sorun Oluştu', 'Burada Ne Yapıyorsun ?', 'Burada İşinize Yarayacak Birşey Yok', 'Aradığın Sayfa Burada Değil',];
+	var get = function get(n) {return phrases[typeof n === 'number' ? n : Math.round(Math.random() * (phrases.length - 1))];};
+	var upd = function upd(n) {return document.querySelector('h2').textContent = get(n);};
+upd();
+var curr = 0;
+document.addEventListener('click', function () {return upd(++curr >= phrases.length ? curr = 0 : curr);}, false);
+</script>
+<SCRIPT LANGUAGE="Javascript">
+var isNS = (navigator.appName == "Netscape") ? 1 : 0;
+var EnableRightClick = 0;
+if(isNS)
+document.captureEvents(Event.MOUSEDOWN||Event.MOUSEUP);
+function mischandler(){
+if(EnableRightClick==1){ return true; }
+else {return false; }
+}
+function mousehandler(e){
+if(EnableRightClick==1){ return true; }
+var myevent = (isNS) ? e : event;
+var eventbutton = (isNS) ? myevent.which : myevent.button;
+if((eventbutton==2)||(eventbutton==3)) return false;
+}
+function keyhandler(e) {
+var myevent = (isNS) ? e : window.event;
+if (myevent.keyCode==96)
+EnableRightClick = 1;
+return;
+}
+document.oncontextmenu = mischandler;
+document.onkeypress = keyhandler;
+document.onmousedown = mousehandler;
+document.onmouseup = mousehandler;
+</script>
+<script language="JavaScript1.2">
+ 
+function disableselect(e){
+return false
+}
+ 
+function reEnable(){
+return true
+}
+ 
+document.onselectstart=new Function ("return false")
+ 
+if (window.sidebar){
+document.onmousedown=disableselect
+document.onclick=reEnable
+}
+</script>
+</body>
+</html>
